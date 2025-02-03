@@ -19,7 +19,7 @@ public class forinjava {
          */
         /*
          * Multification table
-         */
+         */ 
         int result = 0;
         int multiplicationTableNum = 0;
         int row = 10;
