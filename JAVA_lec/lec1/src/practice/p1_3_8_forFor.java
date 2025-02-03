@@ -1,7 +1,4 @@
-package practice_ref;
-
-public class p1_3_8_forFor {
-    
+package practice;
 /*
  * 출력 형태를 다음과 같이 만들기 실습
  * 실습1:
@@ -16,7 +13,10 @@ public class p1_3_8_forFor {
  *  $$$
  *   $
  */
-public class 실습_3장_9_forfor문 {
+
+
+public class p1_3_8_forFor {
+    
     public static void main(String[] args) {
         int rows =4; 
 
@@ -31,7 +31,4 @@ public class 실습_3장_9_forfor문 {
             System.out.println(); 
         }
     }
-    
-}
-
 }
