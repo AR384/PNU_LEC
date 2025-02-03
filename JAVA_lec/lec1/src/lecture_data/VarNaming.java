@@ -1,3 +1,4 @@
+package lecture_data;
 public class VarNaming {
     public static void main(String[] args) {
         //변수명 

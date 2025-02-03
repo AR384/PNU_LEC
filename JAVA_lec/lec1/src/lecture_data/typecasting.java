@@ -1,3 +1,4 @@
+package lecture_data;
 public class typecasting {
     public static void main(String[] args) {
         //형변환
