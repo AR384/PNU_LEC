@@ -33,15 +33,20 @@ public class cp3 {
                 System.out.print(subjs[j]+" : ");
                 for (int js : scores[j]) {
                     System.out.print(js);
-                    String result = js>70 ? "=>통과" : "=>과락";
-                    System.out.println(result);
-                    };
+                    String r = (js>70) ? " => pass" : " => Fail";
+                        System.out.println(r);
+                    // if (js>70) {
+                    //     System.out.println("   => 통과");
+                    // }
+                    // else{
+                    //     System.out.println("   => 과락");
+                    // };
                     break;
                 }
             }
         }
-        //end title1
+        //end title 
         }
-
+    }
 
 
