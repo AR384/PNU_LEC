@@ -1,6 +1,6 @@
 package My_Lab;
 
-public class test2_multification_table {
+public class _02_test_multification_table {
     public static void main(String[] args) {
         int row = 12;
         int space = 7;

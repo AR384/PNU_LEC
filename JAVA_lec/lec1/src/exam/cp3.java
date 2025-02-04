@@ -1,7 +1,7 @@
 package exam;
 import java.util.*;
 
-import My_Lab.forinjava;
+import My_Lab._01_test_for;
 public class cp3 {
     public static void main(String[] args) {
         String[] names = { "홍길동", "김유신", "계백", "강감찬", "을지문덕" };

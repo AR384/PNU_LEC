@@ -1,6 +1,6 @@
 package My_Lab;
 import java.util.Scanner;
-public class test3_1 {
+public class _03_test {
     public static void main(String[] args) {
         int score = (int)92.5;
         String resultPass = "pass";

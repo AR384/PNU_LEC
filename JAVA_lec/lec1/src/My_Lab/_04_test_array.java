@@ -1,6 +1,6 @@
 package My_Lab;
 
-public class test4_array {
+public class _04_test_array {
     public static void main(String[] args) {
         String [][] word = new String[1][9];
         String tag = "wood";
