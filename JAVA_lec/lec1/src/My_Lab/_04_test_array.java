@@ -2,15 +2,25 @@ package My_Lab;
 
 public class _04_test_array {
     public static void main(String[] args) {
-        String [][] word = new String[1][9];
-        String tag = "wood";
+        int [][] word = {{1,2},{3,4}};
+        
         for (int i = 0; i < word.length; i++) {
             for (int j = 0; j < word.length; j++) {
-                word[i][j] = tag + j;
-                System.out.println(word[i][j]);
+                
+                System.out.print(word[i][j++]);
+                System.out.print(" ");
+                if (j==word.length-1) {
+                    System.out.println();
+                }
+                else{
+                    continue;
+                }
+
+                
+                
             }
         }
-    
+    System.out.println(word);
     }
 
 }
