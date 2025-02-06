@@ -1,4 +1,98 @@
-
-.c1 {
-    background-color: rgb(23, 53, 53);
+*{
+    padding: 0px;
+    margin: 5px;
 }
+
+.headline_area {
+    background-color: rgb(61, 184, 184);
+    color: rgb(20, 128, 36);
+
+    font-weight: bolder;
+    text-align: center;
+    text-decoration:overline underline ;
+    padding:1%;
+}
+
+.list_area   {
+    background-color: rgb(244, 202, 231);
+    /* list-style-type: square;
+    font-weight: bolder;
+    text-align: center;; */
+}
+ul{
+    background-color: rgb(224, 202, 244);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 233, 244);
+    height: 40px;
+    width: 100%;
+}
+a:hover{
+    background-color: rgba(0, 106, 255, 0.336);
+    color: chartreuse;
+}
+li:hover{
+    background-color: rgba(255, 0, 255, 0.336);
+    
+}
+/* 반응형웹 */
+@media screen and (max-width : 760px){
+    ul{
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    li{
+        width: 50%;
+    }
+}
+#title_box{
+    display: flex;
+    align-items: center;
+    justify-content: cd
+    ;
+}
+
+.fontend_area {
+    background-color: rgb(202, 213, 244);
+    text-align: center;
+    
+}
+
+.title{
+    background-color: rgb(119, 139, 195);
+    text-align: left;
+    /* padding-left: 1%; */
+    text-indent: 1%;
+    margin-bottom: 12px;
+    width: 120px;
+    border-left-style: solid;
+    border-left-width: 25px;
+    border-left-color:black;
+}
+
+main > div >  p {
+    text-align: center;
+}
+.contents{
+    color: chocolate;
+    font-family: "Black Han Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.img{
+    border: 5px;
+    width: 28px;
+    opacity: 1;
+}
+
