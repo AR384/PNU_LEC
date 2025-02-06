@@ -2,62 +2,49 @@ package lecture_data;
 import java.math.*;
 import java.util.*;;;
 
-public class matCalc {
+public class matCalc1 {
 	
 	//___________Field Var_______________
-	//indexing for defaulf constructor
-	// private static int[][] matrx = new int[3][4];
-	// private static int[][] matrx2 = new int[4][5];
+	private static int[][] matrx = new int[3][4];
+	private static int[][] matrx2 = new int[4][5];
 	
 	//_____Constructor without var_____
-	//this area is not need, cause jvm make themself there constructor
-	//therfore do not need getter(return) setter(reset)
-	// public matCalc(){
-	// 	super();
-	// }
-	
-		//_______Constructor with var_______
-		//
-		// public matCalc(int[][] matrx, int[][] matrx2) {
-		// 	this.matrx=matrx;
-		// 	this.matrx = matrx2;
-		// }
+	//
+	public matCalc1(){
+		super();
+	}
+	//_______Constructor with var_______
+	//return field var
+	public matCalc1(int[][] matrx, int[][] matrx2) {
+		this.matrx=matrx;
+		this.matrx = matrx2;
+	}
 	
 	//__________getter method__________
 	//return field var
-	// public int[][] getmatrx()
-	// {
-	// 	return this.matrx;
-	// }
-	// public int[][] getmatrx2()
-	// {
-	// 	return this.matrx2;
-	// }
-
-	// __________setter method___________
-	// reset field var
-	// public void setmatrx(int[][] matrx)
-	// {
-	// 	this.matrx = matrx;
-	// }
-	// public void setmatrx2(int[][] matrx2)
-	// {
-	// 	this.matrx2 = matrx2;
-	// }
 	
-	//_________Q__________
-	static void showMatrix(int [][]X) {
-		//2차원 모습으로 출력
+	public int[][] getmatrx()
+	{
+		return this.matrx;
 	}
-	static void addMatrix(int [][]B, int [][]C){
-		
+	public int[][] getmatrx2()
+	{
+		return this.matrx2;
 	}
-	static void multiplyMatrix(int [][]B,int [][]E){
-		
+
+	//__________setter method___________
+	//reset field var
+	public void setmatrx(int[][] matrx)
+	{
+		this.matrx = matrx;
 	}
-	static void transposeMatrix(int [][]B){
-		
+	
+	public void setmatrx2(int[][] matrx2)
+	{
+		this.matrx2 = matrx2;
 	}
+	
+	
 	
     // static void getData(int[][] b){
 	// 		System.out.println(b.length +" X "+b[0].length );
@@ -151,20 +138,20 @@ public class matCalc {
 		int[][] F = new int[3][4];
 		
         
-		System.out.println("행렬 더하기: A[3][4] = B[3][4] + C[3][4]");
-		getData(B);getData(C);getData(E);
+		// System.out.println("행렬 더하기: A[3][4] = B[3][4] + C[3][4]");
+		// getData(B);getData(C);getData(E);
 		
-		A = addMatrix(B, C);
-		showMatrix(B);showMatrix(C);showMatrix(A);
-		System.out.println();
-		System.out.println("행렬 곱하기: D[3][5] = B[3][4] * E[4][5]");
+		// A = addMatrix(B, C);
+		// showMatrix(B);showMatrix(C);showMatrix(A);
+		// System.out.println();
+		// System.out.println("행렬 곱하기: D[3][5] = B[3][4] * E[4][5]");
 		
-		D = multiplyMatrix(B,E);
-		showMatrix(B);showMatrix(E);showMatrix(D);
-		System.out.println("행렬 전치: F[4][3] = B[3][4]의 전치 행렬");
+		// D = multiplyMatrix(B,E);
+		// showMatrix(B);showMatrix(E);showMatrix(D);
+		// System.out.println("행렬 전치: F[4][3] = B[3][4]의 전치 행렬");
 		
-		F = transposeMatrix(B);
-		showMatrix(B);showMatrix(F);
+		// F = transposeMatrix(B);
+		// showMatrix(B);showMatrix(F);
 
 	
 
