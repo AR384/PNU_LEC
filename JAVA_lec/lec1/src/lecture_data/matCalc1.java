@@ -14,7 +14,7 @@ public class matCalc1 {
 		super();
 	}
 	//_______Constructor with var_______
-	//return field var
+	//
 	public matCalc1(int[][] matrx, int[][] matrx2) {
 		this.matrx=matrx;
 		this.matrx = matrx2;
@@ -25,11 +25,11 @@ public class matCalc1 {
 	
 	public int[][] getmatrx()
 	{
-		return this.matrx;
+		return matrx;
 	}
 	public int[][] getmatrx2()
 	{
-		return this.matrx2;
+		return matrx2;
 	}
 
 	//__________setter method___________
@@ -136,6 +136,10 @@ public class matCalc1 {
 		int[][] E = {{2,4,6,8,10},{3,6,9,12,15},{1,2,3,4,5},{5,4,3,2,1}};
 		int[][] D = new int[3][5];
 		int[][] F = new int[3][4];
+		
+		matCalc1 mc1 = new matCalc1();
+		
+		mc1.setmatrx(B);
 		
         
 		// System.out.println("행렬 더하기: A[3][4] = B[3][4] + C[3][4]");

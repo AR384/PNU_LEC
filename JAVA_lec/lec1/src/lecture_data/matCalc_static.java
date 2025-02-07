@@ -45,19 +45,22 @@ public class matCalc_static {
 		System.out.println();
 	}
 	static int[][] addMatrix(int [][] X, int [][] P){
-		for (int i = 0; i < X.length; i++) {
-            for (int j = 0; j < X[0].length ; j++) {
-				matrx[i][j] = X[i][j]+P[i][j];
-                // System.out.print(matrx[i][j]);
-                // System.out.print(" ");
-				
-                if (j==X[0].length-1) {
-                    System.out.println();
-                }
-                else{
-                    continue;
-                }
-            }
+
+		if (X.length==P.length){
+			for (int i = 0; i < X.length; i++) {
+				for (int j = 0; j < X[0].length ; j++) {
+					matrx[i][j] = X[i][j]+P[i][j];
+					// System.out.print(matrx[i][j]);
+					// System.out.print(" ");
+					
+					if (j==X[0].length-1) {
+						System.out.println();
+					}
+					else{
+						continue;
+					}
+				}
+		}
         }
 		return matrx ;
 	}
@@ -83,7 +86,7 @@ public class matCalc_static {
 	static int[][] transposeMatrix(int[][] B){
 		return matrx;
 	}
-		
+
 	
 	public static void main(String[] args) {
 		/*

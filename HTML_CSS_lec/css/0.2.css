@@ -1,76 +1,144 @@
 *{
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
 }
-
+#pageback{
+    height: 1200px;
+    background-image: url("https://cdn.travie.com/news/photo/202404/52446_32969_4728.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    animation-name: Backgroundslider;
+    animation-duration: 25s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
 .headline_area {
-    background-color: rgb(61, 184, 184);
-    color: rgb(20, 128, 36);
-
+    background-color: rgba(61, 184, 184, 0.248);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     text-align: center;
-    text-decoration:overline underline ;
-    padding:1%;
+    height: auto;
+}
+
+
+#iconslide{
+    width: 45px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation-name: myicon;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 .list_area   {
-    background-color: rgb(244, 202, 231);
-    /* list-style-type: square;
-    font-weight: bolder;
-    text-align: center;; */
+    background-color: rgba(244, 202, 231, 0.281);
 }
+
+.fontend_area {
+    background-color: rgba(202, 213, 244, 0.207);
+    text-align: center;
+    
+}
+
 ul{
-    background-color: rgb(224, 202, 244);
+    background-color: rgba(224, 202, 244, 0.462);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items:center;
     text-align: center;
-    height: 200px;
+    height: 50px;
     width: 100%;
 }
 li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(202, 233, 244);
+    border-radius: 10px;
+    background-color: rgba(202, 233, 244, 0.444);
     height: 40px;
-    width: 100%;
+    width: 80px;
+    
 }
+/* a 태그 호버링시 효과 */
 a:hover{
     background-color: rgba(0, 106, 255, 0.336);
     color: chartreuse;
 }
+
 li:hover{
     background-color: rgba(255, 0, 255, 0.336);
     
 }
+
+/* 키프레임 */
+@keyframes Backgroundslider {
+    20%{background-image: url(https://i.namu.wiki/i/hkDOgJHC40yiIFKQDRz7YjHpzWrL9vCTT7mve4TF6Lj-GpGsBpvT8WlXbwOT_To1Ndl1zKrVLQ-SiwaGNFOgQA.webp);}
+    45%{background-image: url(https://www.busan.go.kr/comm/getImage?srvcId=MEDIA&upperNo=17500&fileTy=MEDIA&fileNo=1);}
+    60%{background-image: url(https://i.namu.wiki/i/hkDOgJHC40yiIFKQDRz7YjHpzWrL9vCTT7mve4TF6Lj-GpGsBpvT8WlXbwOT_To1Ndl1zKrVLQ-SiwaGNFOgQA.webp);}
+    100%{background-image: url(https://www.busan.go.kr/comm/getImage?srvcId=MEDIA&upperNo=17500&fileTy=MEDIA&fileNo=1);}
+}
+
+@keyframes myicon {
+    20%{background-image: url(../css/img/html.png);}
+    45%{background-image: url(../css/img/css.png);}
+    60%{background-image: url(../css/img/js.png);}
+    100%{background-image: url(../css/img/react.png);}
+}
 /* 반응형웹 */
-@media screen and (max-width : 760px){
+@media screen and (orientation:portrait){
+    #pageback{
+        background-image: url("../css/img/pic1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-play-state: paused;
+    }
+    .headline_area {
+        background-color: rgba(61, 184, 184, 0.248);
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        text-align: center;
+        height: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+    }
+    main > article {
+        width: 100%;
+    }
     ul{
-        background-color: brown;
+        background-color: rgba(42, 91, 165, 0.152);
         display: flex;
         flex-direction: column;
-        height: 300px;
+        align-items: start;
+        height: 400px;
+        width: 100px;
     }
     li{
-        width: 50%;
+        width: 100%;
+    }
+    
+    body{
+        
+    }
+    p{
+        display: flex;
+        flex-direction: column;
     }
 }
 #title_box{
     display: flex;
     align-items: center;
-    justify-content: cd
-    ;
+    justify-content: center;
 }
 
-.fontend_area {
-    background-color: rgb(202, 213, 244);
-    text-align: center;
-    
-}
 
 .title{
-    background-color: rgb(119, 139, 195);
+    background-color: rgba(119, 139, 195, 0.382);
     text-align: left;
     /* padding-left: 1%; */
     text-indent: 1%;
@@ -78,14 +146,14 @@ li:hover{
     width: 120px;
     border-left-style: solid;
     border-left-width: 25px;
-    border-left-color:black;
+    border-left-color:rgba(0, 0, 0, 0.404);
 }
 
 main > div >  p {
     text-align: center;
 }
 .contents{
-    color: chocolate;
+    color: rgb(0, 0, 0);
     font-family: "Black Han Sans", serif;
     font-weight: 400;
     font-style: normal;

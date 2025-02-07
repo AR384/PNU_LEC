@@ -19,3 +19,20 @@ class내의 전역 변수 선언은 밖에 변수 선언해주면됌
 메소드 인자는 변수형태로 선언해주면됌
 
 MD작성법 알아 둘것
+
+
+setter는 class내의 private 필드에 접근하기 위해 사용한다 argument를 통해 field var에 할당 this
+필드에 private 가 아니면  setter 가 필요한가?
+class내의 변수라는 건데..........이걸 외부에서 
+
+자바의 데이터 타입은 2개이다 
+1.기본데이터타입 -------2. 참조타입(참조변수) String Array list class interface method 등등
+기본데이터타입 bit byte int short long double float boolean char 는 스택영역에 변수에 값(literal)이 직접 할당된다
+2. 참조타입은 스택에 literal이 저장되어 있는 힙영역의 주소가 저장된다. 또한 힙에는 instance 생성
+
+클래스, 객체, 인스턴스의 차이
+클래스(Class) VS 객체(Object)
+클래스는 ‘설계도’, 객체는 ‘설계도로 구현한 모든 대상’을 의미한다.
+객체(Object) VS 인스턴스(Instance)
+클래스의 타입으로 선언되었을 때 객체라고 부르고, 그 객체가 메모리에 할당되어 실제 사용될 때 인스턴스라고 부른다.
+객체는 현실 세계에 가깝고, 인스턴스는 소프트웨어 세계에 가깝다.
