@@ -9,7 +9,7 @@
     background-size:100%;
     animation-name: Backgroundslider;
     animation-duration: 25s;
-    animation-delay: 5s;
+    animation-delay: 7s;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
@@ -47,7 +47,7 @@
 ul{
     background-color: rgba(224, 202, 244, 0.462);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
     text-align: center;
     height: 50px;
@@ -71,8 +71,17 @@ a:hover{
 
 li:hover{
     background-color: rgba(255, 0, 255, 0.336);
-    
 }
+
+li:hover{
+    background-color: rgba(255, 0, 255, 0.336);
+}
+
+#fontend:hover{
+    background-color: rgba(255, 0, 255, 0.336);
+}
+
+
 
 /* 키프레임 */
 @keyframes Backgroundslider {
@@ -83,15 +92,15 @@ li:hover{
 }
 
 @keyframes myicon {
-    20%{background-image: url(../css/img/html.png);}
-    45%{background-image: url(../css/img/css.png);}
-    60%{background-image: url(../css/img/js.png);}
-    100%{background-image: url(../css/img/react.png);}
+    20%{background-image: url(../img/html.png);}
+    45%{background-image: url(../img/css.png);}
+    60%{background-image: url(../img/js.png);}
+    100%{background-image: url(../img/react.png);}
 }
 /* 반응형웹 */
 @media screen and (orientation:portrait){
     #pageback{
-        background-image: url("../css/img/pic1.jpg");
+        background-image: url("../img/html.png");
         background-repeat: no-repeat;
         background-size: cover;
         animation-play-state: paused;
@@ -122,9 +131,7 @@ li:hover{
         width: 100%;
     }
     
-    body{
-        
-    }
+
     p{
         display: flex;
         flex-direction: column;
@@ -133,7 +140,7 @@ li:hover{
 #title_box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:start;
 }
 
 
@@ -163,4 +170,9 @@ main > div >  p {
     width: 28px;
     opacity: 1;
 }
-
+footer{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    text-align: start;
+}

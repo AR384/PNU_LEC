@@ -1,0 +1,15 @@
+button{
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    color:tomato;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color:aqua;
+    color:darkblue;
+}

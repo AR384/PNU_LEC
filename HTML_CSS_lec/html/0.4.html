@@ -5,8 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML실습</title>
         <!-- 외부 스타일 선언법 CSS 연결 -->
-        <link rel="stylesheet" type="text/css" href="./0.2.css">
+        <link rel="stylesheet" type="text/css" href="../css/0.2.css">
+        <link rel="stylesheet" type="text/css" href="../css/0.4.css">
+        <!-- 자바 스크립트 연결 -->
+        <script src="../JS/04.js"></script>
+        
+        <!--
+        alert = 팝업 명령어 위치는 관계없음 
+        <script>
+            function hello(){
+                alert("Description");
+            }
+            //화살표 함수 const는 바뀌지 않는것
+            
+            const hello2 = 1;//값을 받는 형태
+            const hello3 = (msg) => {
+                alert("hello "+msg);
+            }//익명 함수를 받는 형태
+            
+        </script> -->
     </head>
+    
     <body>
         <!-- 웹폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +35,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
         <!--Webfont  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
         <div id="pageback">
             <header>
                 <div id="headline" class="headline_area">
@@ -25,7 +46,24 @@
                 </div>
             </header>
             <section id="list" class="list_area">
+                <nav>
                 <ul>
+                    <form>
+                        <button onclick="hello()">hello</button>
+                    </form>
+                    
+                    <form>
+                        <button onclick="hello3('2')">hello2</button>
+                    </form>
+                    
+                    <form>
+                        <button onclick="hello3('no')"><i class="fa-brands fa-github"></i></button>
+                    </form>
+                    
+                    <form>
+                        <button onclick="hi()">get</button>
+                    </form>
+                    
                     <li><a href="https://github.com/AR384?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i>GIt</a></li>
                     <li><a href="#html">HTML</a></li>
                     <li><a href="#css">CSS</a></li>
@@ -36,11 +74,11 @@
                     <li><a href="https://developer.mozilla.org/ko/" target="_blank">MDN</a></li>
                     <li><a href="https://www.w3schools.com/"  target="_blank"> W3School</a></li>
                 </ul>
-
+            </nav>
                 <article>
                     <div id="fontend" class="fontend_area">
                         <span>
-                            <h1>프론트엔드FrontEnd</h1><hr>
+                            <h1 id="#font">프론트엔드FrontEnd</h1><hr>
                             <p>
                                 웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 HTML, CSS,자바스크립트가쓰이며,요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글 페이지 애플리케이션 형태의 리액트가 많이 사용된다.
                             </p>
@@ -71,7 +109,7 @@
                             <h2 id="title1" >CSS</h2>
                         </div>
                         <div>
-                            <img src="../css/img/css.png" alt="html이미지" class="img">
+                            <img src="../img/css.png" alt="html이미지" class="img">
                         </div>
                         <div>
                             <p class="contents">
@@ -87,7 +125,7 @@
                             <h2 id="title1" >JS</h2>
                         </div>
                         <div>
-                            <img src="../css/img/js.png" alt="html이미지" class="img">
+                            <img src="../img/js.png" alt="html이미지" class="img">
                         </div>
                         <div>
                             <p class="contents">
@@ -103,7 +141,7 @@
                             <h2 id="title1" >React</h2>
                         </div>
                         <div>
-                            <img src="../css/img/react.png" alt="html이미지" class="img">
+                            <img src="../img/react.png" alt="html이미지" class="img">
                         </div>
                         <div>
                             <p class="contents">
@@ -116,14 +154,14 @@
         </div>
     </body>
     <footer>
-        <div>
+        <div id="outtext">
             
-            <h2>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</h2><h
-            <p>
-                웹개발, 자바/자료구조/AI 프로그래밍, DB SQL, 빅데이터분석, 텐서플로딥러닝,
-                AI학습모델웹서비스프로젝트,
-                빅데이터분석웹서비스프로젝트
-            </p>부산대학교 과학기술연구동 4층 401호 juri3763@pusan.ac.kr 051-510-3764
+            <h2>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</h2>
+                <p>
+                    웹개발, 자바/자료구조/AI 프로그래밍, DB SQL, 빅데이터분석, 텐서플로딥러닝,
+                    AI학습모델웹서비스프로젝트,
+                    빅데이터분석웹서비스프로젝트
+                </p>부산대학교 과학기술연구동 4층 401호 juri3763@pusan.ac.kr 051-510-3764
         </div>
     </footer>
     </html>
