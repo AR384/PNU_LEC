@@ -1,7 +1,7 @@
-package exam;
+package exam.els;
 import java.util.*;
 
-public class cp1 {
+public class mScanner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         

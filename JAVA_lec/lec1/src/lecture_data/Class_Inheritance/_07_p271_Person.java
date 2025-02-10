@@ -1,10 +1,14 @@
-package lecture_data;
+package lecture_data.Class_Inheritance;
 
-public class _07_p269_Empoloy {
+public class _07_p271_Person {
     private String name;
     private int age;
-    private String dept;
-
+    
+    public _07_p271_Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+        
     public String getName() {
         return this.name;
     }
@@ -20,15 +24,8 @@ public class _07_p269_Empoloy {
     public void setAge(int age) {
         this.age = age;
     }
-
-    public String getDept() {
-        return this.dept;
+    public String toString(){
+        return name + " : " + age;
     }
-
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
-    
-    
 
 }

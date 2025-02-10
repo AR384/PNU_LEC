@@ -1,4 +1,4 @@
-package lecture_data;
+package lecture_data.tmp;
 public class VarNaming {
     public static void main(String[] args) {
         //변수명 

@@ -1,4 +1,4 @@
-package lecture_data;
+package lecture_data.tmp;
 
 public class tirple_condition
  {//삼항 연산자 type var = (condition) ? true:false;

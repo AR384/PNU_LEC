@@ -1,4 +1,4 @@
-package lecture_data;
+package lecture_data.tmp;
 public class Type_Casting {
     public static void main(String[] args) {
         /*  ----형변환-----

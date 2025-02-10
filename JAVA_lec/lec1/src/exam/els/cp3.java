@@ -1,4 +1,4 @@
-package exam;
+package exam.els;
 import java.util.*;
 
 import My_Lab._01_test_for;

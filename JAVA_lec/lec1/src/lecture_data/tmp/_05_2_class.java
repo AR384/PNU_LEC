@@ -1,4 +1,4 @@
-package lecture_data;
+package lecture_data.tmp;
 
 import java.util.Random;
 import java.util.Scanner;

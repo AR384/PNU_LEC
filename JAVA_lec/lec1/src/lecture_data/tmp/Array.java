@@ -1,4 +1,4 @@
-package lecture_data;
+package lecture_data.tmp;
 import java.math.*;
 public class Array {
     public static void main(String[] args) {
