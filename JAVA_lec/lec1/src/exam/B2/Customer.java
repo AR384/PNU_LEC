@@ -6,6 +6,12 @@ public class Customer {
     private String city;
     private int age;
     
+    public Customer (Customer c){
+        cname = c.getCname();
+        city = c.getCity();
+        age = c.getAge();
+    }
+    
     public Customer (String cname, String city, int age){
         this.cname = cname;
         this.city = city;

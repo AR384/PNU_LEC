@@ -1,4 +1,32 @@
-button{
+/* form  {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+#inputform{
+    background-color: aqua;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+#input__textarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;    
+}
+
+button[type = button] {
     display: inline-flex;
     padding: 5px;
     margin: 5px;
@@ -13,3 +41,19 @@ button:hover{
     background-color:aqua;
     color:darkblue;
 }
+input[type=text]{
+    margin: 5px;
+    height: 25px;
+    border: none;
+    background-color: brown;
+    color: yellow;
+    
+}
+
+/* #txt2{
+    margin: 5px;
+    height: 25px;
+    border: none;
+    background-color: brown;
+    color: yellow;
+} */

@@ -61,6 +61,7 @@ li{
     background-color: rgba(202, 233, 244, 0.444);
     height: 40px;
     width: 80px;
+    margin: 2px;
     
 }
 /* a 태그 호버링시 효과 */
@@ -176,3 +177,6 @@ footer{
     align-items: start;
     text-align: start;
 }
+
+
+

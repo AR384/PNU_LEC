@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부산대학교 html css 강의</title>
-</head>
-
-    <!-- <a href="https://www.inflearn.com/course/%EB%88%84%EA%B5%AC%EB%82%98-%EC%89%BD%EA%B2%8C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%9B%B9%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88">인프런 참고 영상 </a>
-    <br /><a href="https://developer.mozilla.org/ko/"> w3school</a>
-    <br /><a href=" https://www.w3schools.com/"> mdn</a> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!-- 외부 스타일 선언법 CSS 연결 -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/0.4.css">
+        <!-- 자바 스크립트 연결 -->
+        <script src="../JS/04.js"></script>
+        
+    </head>
     
-    <ul><!-- ol 은 숫자  ul은 dot <br />=줄바꿈 -->
-        <li>
-            <a href="https://www.inflearn.com/course/%EB%88%84%EA%B5%AC%EB%82%98-%EC%89%BD%EA%B2%8C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%9B%B9%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88">인프런 참고 영상 </a>
-        </li>
-        <li> 
-            <a href="https://developer.mozilla.org/ko/"> w3school</a>
-        </li>
-        <li>
-            <a href=" https://www.w3schools.com/"> mdn</a>
-        </li>               
-    </ul>
-</body>
-</html>
+    <body>
+        <!-- 웹폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- WEBICON -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star" />
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <!--Webfont  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        <div id="pageback">
+            <header>
+                <div id="headline" class="headline_area">
+                        <span>
+                            <h1>HTML수업&자료정리</h1>
+                        </span>
+                </div>
+            </header>
+            <section id="list" class="list_area">
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/AR384?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i>GIt</a></li>
+                    <li><a href="./index.html" ><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="./css.html" ><i class="fa-brands fa-css"></i></a></li>
+                    <li><a href="./js.html" ><i class="fa-brands fa-js"></i></a></li>
+                    <li><a href="#react"><i class="fa-brands fa-react"></i></a></li>
+                    <li><a href="https://fontawesome.com/search"target="_blank"><i class="fa-solid fa-icons"></i></a></li>
+                    <li><a href="https://fonts.google.com/" target="_blank"><i class="fa-solid fa-font"></i></a></li>
+                    <li><a href="https://developer.mozilla.org/ko/" target="_blank">MDN</a></li>
+                    <li><a href="https://www.w3schools.com/"  target="_blank"> W3</a></li>
+                </ul>
+            </nav>
+
+            </section>
+            <main>
+                    <div id="inputform">
+                        <!-- <form target="_parent"> -->
+                            <div id="input__textarea">
+                                <input type="text" name="txt1" id="txt1" placeholder="placeholder_txt1" value="">
+                                <input type="text" name="txt2" id="txt2" placeholder="placeholder_txt2" value="" readonly>
+                                <input type="text">
+                            </div>
+                            <div id="input_button">
+                                <button onclick="snd2()">snd</button>
+                                <button onclick="check2()">check2</button>
+                                <button onclick="check3()">check3</button>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                    
+                
+            </main>
+            
+        </div>
+    </body>
+    <footer>
+        <div id="outtext">
+            
+            <h2>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</h2>
+                <p>
+                    웹개발, 자바/자료구조/AI 프로그래밍, DB SQL, 빅데이터분석, 텐서플로딥러닝,
+                    AI학습모델웹서비스프로젝트,
+                    빅데이터분석웹서비스프로젝트
+                </p>부산대학교 과학기술연구동 4층 401호 juri3763@pusan.ac.kr 051-510-3764
+        </div>
+    </footer>
+    </html>
