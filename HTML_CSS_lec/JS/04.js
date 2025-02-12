@@ -49,26 +49,35 @@ function snd2(){
 }
 
 
-const show = (m ) =>{
-    document.getElementById('txt2').value = m
+class Input_ {
+    constructor(parameters) {}
+    show(i ,s){
+        document.getElementById('txt'+i).value = s
+    }
+
 }
+
+let Input_s = new Input_();
+
+
 
 function check2(){
     //1. 문자열 가져오기
-    let s = document.getElementById("txt1").value;
+    let s = String(document.getElementById("txt1").value);
     //2. 문자열 뒤집어진 문자열 생성
-    let sr = " ";
+    let sr = s;
+    let ssr = ' ';
+    let abe = [...s,...ssr];
+    ssr = s.replaceAll(" ","").split('').reverse().join('').replace();
     for (let i = s.length-1; i >=0; i--) {
         sr = sr + s[i]
     }
     console.log(s,sr)
-    //3.입력문자 비교
-    if (s===sr) {
-        show("d")
-    }
-    else{
-        show("rl")
-    }
+    Input_s.show(2,s)
+    Input_s.show(3,sr)
+    Input_s.show(4,abe)
+    
+    
 }
 const check3 = () =>{
     let s = document.getElementById("txt1").value;
@@ -82,3 +91,11 @@ const check3 = () =>{
     document.getElementById('txt2').value = sum
 }
 
+function check4(){
+    let ran = [];
+    while (ran.length < 7) {
+        let n = Math.floor(Math.random()*45+1)+1
+        ran[n]
+    }
+    Input_s.show(5,ran);
+}

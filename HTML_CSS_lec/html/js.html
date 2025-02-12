@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <link rel="stylesheet" type="text/css" href="../css/js.css">
+    <link rel="stylesheet" type="text/css" href="../css/0.4.css">
+    <!-- 자바 스크립트 연결 -->
+    <script src="../JS/04.js"></script>
+    <script src="../JS/0.6.js"></script>
 </head>
 <body>
     <!-- 웹폰트 -->
@@ -18,13 +23,14 @@
         <header>
             <div id="headline" class="headline_area">
                     <span>
-                        <h1>HTML수업&자료정리</h1>
+                        <h1>JS</h1>
                     </span>
             </div>
         </header>
         <section id="list" class="list_area">
             <nav>
                 <ul>
+                    
                     <li><a href="https://github.com/AR384?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i>GIt</a></li>
                     <li><a href="./index.html" ><i class="fa-solid fa-house"></i></a></li>
                     <li><a href="./css.html" ><i class="fa-brands fa-css"></i></a></li>
@@ -37,5 +43,27 @@
                 </ul>
             </nav>
         </section>
+        <div id="inputform">
+            <!-- <form target="_parent"> -->
+                <div id="input__textarea">
+                    <input type="text" name="txt1" id="txt1" placeholder="placeholder_txt1" value="">
+                    <input type="text" name="txt2" id="txt2" placeholder="placeholder_txt2" value="" readonly>
+                    <input type="text"name="txt3" id="txt3" placeholder="placeholder_txt2" value="" readonly>
+                    <input type="text"name="txt4" id="txt4" placeholder="placeholder_txt2" value="" readonly>
+                    <input type="text"name="txt5" id="txt5" placeholder="Lotto" value="" readonly>
+                </div>
+                <div id="input_button">
+                    <button onclick="snd2()">snd</button>
+                    <button onclick="check2()">check2</button>
+                    <button onclick="check3()">check3</button>
+                    <button onclick="check4()">check4</button>
+                    
+                </div>
+            <!-- </form> -->
+        </div>
+        <div id="msg">
+            
+        </div>
+    </div>
 </body>
 </html>

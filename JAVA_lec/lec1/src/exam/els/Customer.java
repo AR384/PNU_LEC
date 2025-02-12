@@ -1,4 +1,4 @@
-package exam.B1;
+package exam.els;
 
 public class Customer {
 

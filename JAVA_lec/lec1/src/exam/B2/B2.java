@@ -1,4 +1,4 @@
-package exam.B1;
+package exam.B2;
 import java.text.SimpleDateFormat;
 import java.util.*;
 //import java.text.SimpleDateFormat;
@@ -6,12 +6,12 @@ import java.util.*;
 class Customer{
     private String cname;
     private String city;
-    private int age;
+    private String age;
 
     public Customer (String cname, String city, int age){
         this.cname = cname;
         this.city = city;
-        this.age = age;
+        this.age = Integer.toString(age);
     }
 
     public String getCname() {
@@ -30,12 +30,12 @@ class Customer{
         this.city = city;
     }
 
-    public int getAge() {
+    public String getAge() {
         return this.age;
     }
 
     public void setAge(int age) {
-        this.age = age;
+        this.age = Integer.toString(age);
     }
     
     
@@ -45,8 +45,6 @@ class Item {
     private String name;
     private double price;
     private int stockQuantity;
-    private int[] orderq= new int[2];
-    Order o = new Order(null);
     
     Item(String name,double price,int stockQuantity){
         this.name = name;
@@ -94,7 +92,7 @@ class Item {
 }
 class Order{
     private Customer customer; //고객명
-    private Item []items = new Item[2] ; //주문제품들
+    private Item []items ; //주문제품들
     private int[]quantities = new int[2];//주문제품수량들
     private String []orderDates = new String[2];//주문일자들
     private int count = 0; //배열인덱스
@@ -111,18 +109,14 @@ class Order{
     
     
     void addItem(Item item, int orderNumber) {
-        for (int i = orderNumber-1; i < orderNumber; i++) {
-            items[i] =item;
+        for (int i = 0; i < count++; i++) {
+            this. items[i] =item;
             quantities[i] = orderNumber;
             price[i] = items[i].getPrice()*orderNumber;
             items[i].reduceStock(orderNumber);
-            count++;
+            
         }
         
-    }
-    int[] getQuantities(){
-        
-            return quantities;
     }
 
     double calculateTotal() { 
@@ -141,7 +135,7 @@ class Order{
     
     }
 
-public class B1 {
+public class B2 {
     public static void main(String[] args) {
     // 아이템생성
     Item laptop = new Item("노트북", 1200.00, 10); 
