@@ -38,6 +38,9 @@ class Customer{
         this.age = age;
     }
     
+    public String toString(){
+        return "name" + cname + "city" + city + "age" + age;
+    }
     
 }
 
@@ -45,8 +48,6 @@ class Item {
     private String name;
     private double price;
     private int stockQuantity;
-    private int[] orderq= new int[2];
-    Order o = new Order(null);
     
     Item(String name,double price,int stockQuantity){
         this.name = name;
@@ -89,51 +90,70 @@ class Item {
     public void show() {
     // name = ***, price=*** 등으로출력
     }
-    
-    
 }
+
 class Order{
     private Customer customer; //고객명
-    private Item []items = new Item[2] ; //주문제품들
-    private int[]quantities = new int[2];//주문제품수량들
-    private String []orderDates = new String[2];//주문일자들
+    private Item []items  ; //주문제품들
+    private int[]quantities ;//주문제품수량들
+    private String []orderDates ;//주문일자들
     private int count = 0; //배열인덱스
-    private double []price = new double[2]; //없었음
-    
-    Date dDate = new Date();
-    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
-    
-    
-    
+    // private Item []items1;
+
     Order (Customer c){
         this.customer = c;
     }
     
-    
-    void addItem(Item item, int orderNumber) {
-        for (int i = orderNumber-1; i < orderNumber; i++) {
-            items[i] =item;
-            quantities[i] = orderNumber;
-            price[i] = items[i].getPrice()*orderNumber;
-            items[i].reduceStock(orderNumber);
-            count++;
-        }
+void addItem(Item item, int orderNumber){
+    if (items==null) {
+        count++;
+        items = new Item[count];
+        quantities = new int[count];
+        items[count-1] =item;
+        quantities[count-1] = orderNumber;
         
     }
-    int[] getQuantities(){
+    else {
+        //----------items have sized resize arr
+        count++;
+        Item []items1 = new Item[count] ;
+        int quantities1 [] = new int[count];
+        //--------existing value transition
+        for (int i = 0; i < count-1; i++) {
+            items1[i] = items[i];
+            quantities1[i] = quantities[i];
+        }
+        //enter new item
+        items1[count-1]= item;
+        items = items1;
+        quantities1[count-1] = orderNumber;
+        quantities = quantities1;
         
+    }
+}
+    
+    int[] getQuantities(){
             return quantities;
     }
 
     double calculateTotal() { 
-        
-        return price[0]+price[1];
+        double a = 0.0;
+        for (int i = 0; i <count; i++){
+            a += items[i].getPrice()*(double)quantities[i];
+        }
+        return a;
         
     }
+    
     void printOrderSummary() {
+        Date dDate = new Date();
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
+        orderDates = new String[count];
+
         System.out.println( "name = " + customer.getCname()  + ", " + "city = " + customer.getCity() +", "  +"age = "+ customer.getAge());
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i <count; i++) {
             orderDates[i]= date.format(dDate);
+            items[i].reduceStock(quantities[i]);
             System.out.println("name = " + items[i].getName()  + ", " +"quantity = "+ quantities[i] + ", " + "price = "+ items[i].getPrice()  + ", " +  "orderDates = "+ orderDates[i]+ ", " + "stockQuantity = "+","+ items[i].getStockQuantity() );
         }
         System.out.println("Total = " +calculateTotal());
@@ -152,7 +172,9 @@ public class B1 {
     // 주문생성
     Order order1 = new Order(boy); 
     order1.addItem(laptop, 1); 
-    order1.addItem(tshirt, 2);
+    order1.addItem(laptop, 2); 
+    order1.addItem(tshirt, 3);
+
     order1.printOrderSummary();
     
     Order order2 = new Order(girl); 
